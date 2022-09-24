@@ -203,7 +203,7 @@ def menu(my_name,my_id):
 	os.system('clear')
 	banner()
 	ip = requests.get("https://api.ipify.org").text
-	gh = 'github.com/ILMAN'
+	gh = 'github.com/IlmanRamdhaniR/ILMAN-XD'
 	cetak(nel('\tSelamat Datang [yellow]%s[white] '%(my_name)))
 	print(f'>> Your Idz : '+str(my_id))
 	print(f'>> Your Ip  : {ip}')
