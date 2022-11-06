@@ -63,4 +63,17 @@ $ python ilmanramdhanirahman2.py
 
 
 
+CARA MENJALANKAN PERINTAH ULANG/UPDATE SC YAITU
+
+
+
+
+
+$ git pull
+
+
+
+
+$ python ilmanramdhanirahman2.py
+
 
