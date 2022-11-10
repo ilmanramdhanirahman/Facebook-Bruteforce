@@ -431,7 +431,7 @@ def result():
 			nocp=0
 			for cpku in range(len(lin)):
 				cpkuni=lin[nocp].split('|')
-				print(f'{x}>> {k}{cpkuni[0]}|{cpkuni[1]}')
+				print(f'{x}{k}{cpkuni[0]}|{cpkuni[1]}')
 				nocp +=1
 			print('│')
 			input(f'{x}[{m}├──[KLIK ENTER]{x} ]')
@@ -457,10 +457,10 @@ def result():
 					nom = '0'+str(cih)
 					lol.update({str(cih):str(isi)})
 					lol.update({nom:str(isi)})
-					print(f'>> %s. %s ( {h}%s{x}├──[ID] )'%(nom,isi,len(hem)))
+					print(f' %s. %s ( {h}%s{x}[ID] )'%(nom,isi,len(hem)))
 				else:
 					lol.update({str(cih):str(isi)})
-					print(f'>> %s. %s ({h} %s {x}├──[ID] )'%(cih,isi,(len(hem))))
+					print(f' %s. %s ({h} %s {x}[ID] )'%(cih,isi,(len(hem))))
 			geeh = input(f'\n├──[PILIH] : ')
 			try:geh = lol[geeh]
 			except KeyError:
@@ -475,7 +475,7 @@ def result():
 			for cpku in range(len(lin)):
 				cpkuni=lin[nocp].split('|')
 				print('├──[FILE TIDAK DITEMUKAN]')
-				print(f'{x}>> {h}{cpkuni[0]}|{cpkuni[1]}|{cpkuni[2]}')
+				print(f'{x}{h}{cpkuni[0]}|{cpkuni[1]}|{cpkuni[2]}')
 				nocp +=1
 			print('')
 			input(f'{x}[{m}├──[KLIK ENTER]{x} ]')
