@@ -746,7 +746,7 @@ def passwrd():
 	print('├')
 	print(f'├──[OK]HASIL {h}OK{x} TERSIMPAN DI : {h}OK/%s {x}]'%(okc))
 	print(f'├──[CP]HASIL {k}CP{x} TERSIMPAN DI : {k}CP/%s {x}]'%(cpc))
-	print(f'├──[PLAY AIRPLANE EVERY {m}500{x} ID\n]')
+	print(f'├──[PLAY AIRPLANE EVERY {m}500{x} ID]\n')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
