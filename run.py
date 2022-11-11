@@ -538,6 +538,7 @@ def passwrd():
 	print(f'├──> [ SEDANG PROSES CRACKING MOHON BERSABAR] ')
 	print(f'├──> HASIL {h}OK{x} AKAN TERSIMPAN DI : {h}OK/%s {x}'%(okc))
 	print(f'├──> HASIL {k}CP{x} AKAN TERSIMPAN DI : {k}CP/%s {x}'%(cpc))
+	cetak(nel('\t[green]SETIAP 500 ID MAINKAN MODE PESAWAT[white]10 DETIK'))
 	print('|')
 	print('|')
 	with tred(max_workers=30) as pool:
