@@ -535,10 +535,10 @@ def setting():
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
 	print('|')
-	print(f'├──> [ SEDANG PROSES CRACKING MOHON BERSABAR] ')
+	cetak(nel('\t[green]SEDANG PROSES CRACKING MOHON BERSABAR'))
 	print(f'├──> HASIL {h}OK{x} AKAN TERSIMPAN DI : {h}OK/%s {x}'%(okc))
 	print(f'├──> HASIL {k}CP{x} AKAN TERSIMPAN DI : {k}CP/%s {x}'%(cpc))
-	cetak(nel('\t[green]SETIAP 500 ID MAINKAN MODE PESAWAT[white]10 DETIK'))
+	cetak(nel('\t[green]SETIAP 500 ID MAINKAN MODE PESAWAT [white]10 DETIK'))
 	print('|')
 	print('|')
 	with tred(max_workers=30) as pool:
@@ -576,7 +576,7 @@ def passwrd():
 			else:
 				pool.submit(crackmbasic,idf,pwv)
 	print('|')
-	cetak(nel('\t[cyan]▪︎[green] CRACK SELESAI [cyan] ▪︎[white] '))
+	cetak(nel('\t[green] CRACK SUCCESFULLY '))
 	print(f'[{b}•{x}]{h} HASIL AKUN OK : {h}%s '%(ok))
 	print(f'{x}[{b}•{x}]{k} HASIL AKUN CP : {k}%s{x} '%(cp))
 #--------------------[ METODE-B-API ]-----------------#
