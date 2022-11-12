@@ -433,7 +433,7 @@ def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	gh = 'IlmanRamdhaniR'
 	cetak(nel('\tSELAMAT DATANG [yellow]%s[white]'%(my_name)))
-	print(f'└──[{h}ID KAMU : '+str(my_id){x})
+	print(f'└──[{h}ID KAMU :{x}'+str(my_id))
 	print(f'└──[{sir}IP KAMU : {ip}{x}')
 	print(f'└──[{k}GITHUB  : {gh}{x}')
 	print('──────────────────────────')
