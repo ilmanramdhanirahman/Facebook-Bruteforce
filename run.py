@@ -433,13 +433,13 @@ def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	gh = 'IlmanRamdhaniR'
 	cetak(nel('\tSELAMAT DATANG [yellow]%s[white]'%(my_name)))
-	print(f'└──{h}[ID KAMU{x}: '+str(my_id))
-	print(f'└──{sir}[IP KAMU{x} : {ip}')
-	print(f'└──{k}[GITHUB{x}  : {gh}')
+	print(f'└──[{h}ID KAMU : '+str(my_id){x})
+	print(f'└──[{sir}IP KAMU : {ip}{x}')
+	print(f'└──[{k}GITHUB  : {gh}{x}')
 	print('──────────────────────────')
-	print(f'└──{sir}[1] CRACK PUBLIK{x} ')
-	print(f'└──{h}[2] HASIL CRACK{x}  ')
-	print(f'└──{m}[3] KELUAR{m}       ')
+	print(f'└──[1]{sir}CRACK PUBLIK{x} ')
+	print(f'└──[2]{h}HASIL CRACK{x}  ')
+	print(f'└──[3]{k}KELUAR{x}       ')
 	print('──────────────────────────')
 	Ilman = input('\r└──PILIH : ')
 	if Ilman in ['1']:
@@ -634,8 +634,8 @@ def setting():
 	else:
 		print('├──> PILIH YANG BENAR ')
 		exit()
-	print(f'└──[1] MOBILE FACEBOOK {h}[RECOMENDED]{x} ')
-	print(f'└──[2] MBASIC FACEBOOK {sir}[NOT RECOMENDED]{x} ')
+	print(f'└──[1] MOBILE FACEBOOK {sir}[RECOMENDED]{x} ')
+	print(f'└──[2] MBASIC FACEBOOK {k}[NOT RECOMENDED]{x} ')
 	###print('├──> 3. bbh  ')
 	###print('├──> 4. Mfreefb ')
 	print('──────────────────────────')
