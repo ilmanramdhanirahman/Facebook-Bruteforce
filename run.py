@@ -567,7 +567,7 @@ def dump_massal():
 		exit()
 	try:
 		print('─────────────────────────────')
-		jum = int(input('└──[MAU BERAPA TARGET [MAX 5] : '))
+		jum = int(input('└──[MAU BERAPA TARGET : '))
 		print('──────────────────────────────────')
 	except ValueError:
 		print('└──MASUKKAN ANGKA JANGAN HURUF ')
@@ -579,7 +579,7 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input('└──[MASUKAN ID YANG KE '+str(yz)+' : ')
+		kl = input(f'└──[MASUKAN ID YANG KE '{h}+str(yz)+{x}' : ')
 		print('──────────────────────────────')
 		uid.append(kl)
 	for userr in uid:
