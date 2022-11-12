@@ -433,8 +433,8 @@ def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	gh = 'IlmanRamdhaniR'
 	cetak(nel('\tSELAMAT DATANG [yellow]%s[white]'%(my_name)))
-	print(f'└──[{h}ID KAMU : {h}'+str(my_id))
-	print(f'└──[ IP KAMU : {sir}{ip}{x}')
+	print(f'└──[{h}ID KAMU : {x}'+str(my_id))
+	print(f'└──[IP KAMU : {sir}{ip}{x}')
 	print(f'└──[{k}GITHUB  : {gh}{x}')
 	print('─────────────────────────────')
 	print(f'└──[1]{sir}CRACK PUBLIK{x} ')
@@ -599,7 +599,7 @@ def dump_massal():
 	try:
 		print('──────────────────────────')
 		print(f'└──[TOTAL ID TARGET : {h}'+str(len(id)))
-		print(f'{x}───────────────────────────')
+		print(f'{x}──────────────────────────')
 		setting()
 	except requests.exceptions.ConnectionError:
 		print('└──JARINGAN ERROR COBA LAGI ')
@@ -675,7 +675,6 @@ def setting():
 	passwrd()
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
-	print('|')
 	cetak(nel('\t[green]SEDANG PROSES CRACKING MOHON BERSABAR'))
 	print(f'└──[HASIL {h}OK{x} AKAN TERSIMPAN DI : {h}OK/%s {x}'%(okc))
 	print(f'└──[HASIL {k}CP{x} AKAN TERSIMPAN DI : {k}CP/%s {x}'%(cpc))
