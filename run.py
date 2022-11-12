@@ -579,7 +579,7 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input(f'└──[{h}MASUKAN ID YANG KE {x} '+str(yz)+' : ')
+		kl = input(f'└──[{h}MASUKAN ID YANG KE{x} '+str(yz)+' : ')
 		print('──────────────────────────────')
 		uid.append(kl)
 	for userr in uid:
