@@ -433,8 +433,8 @@ def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	gh = 'IlmanRamdhaniR'
 	cetak(nel('\tSELAMAT DATANG [yellow]%s[white]'%(my_name)))
-	print(f'└──[{h}ID KAMU :{x} '+str(my_id))
-	print(f'└──[{sir}IP KAMU : {ip}{x}')
+	print(f'└──[{h}ID KAMU : '+str(my_id){x})
+	print(f'└──[ IP KAMU : {sir}{ip}{x}')
 	print(f'└──[{k}GITHUB  : {gh}{x}')
 	print('─────────────────────────────')
 	print(f'└──[1]{sir}CRACK PUBLIK{x} ')
@@ -599,8 +599,7 @@ def dump_massal():
 	try:
 		print('──────────────────────────')
 		print(f'└──[TOTAL ID TARGET : {h}'+str(len(id)))
-		print(f'{x}')
-		print('──────────────────────────')
+		print(f'{x}───────────────────────────')
 		setting()
 	except requests.exceptions.ConnectionError:
 		print('└──JARINGAN ERROR COBA LAGI ')
