@@ -599,10 +599,10 @@ def dump_massal():
 	try:
 		print('──────────────────────────')
 		print(f'└──TOTAL ID TARGET : {h}'+str(len(id)))
+		print(f'{x}')
 		print('──────────────────────────')
 		setting()
 	except requests.exceptions.ConnectionError:
-		print(f'{x}')
 		print('└──JARINGAN ERROR COBA LAGI ')
 		back()
 	except (KeyError,IOError):
