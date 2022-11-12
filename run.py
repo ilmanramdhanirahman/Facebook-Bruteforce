@@ -441,7 +441,7 @@ def menu(my_name,my_id):
 	print(f'└──[2]{h}HASIL CRACK{x}  ')
 	print(f'└──[3]{k}KELUAR{x}       ')
 	print('─────────────────────────────')
-	Ilman = input('\r└──PILIH : ')
+	Ilman = input('\r└──[PILIH : ')
 	if Ilman in ['1']:
 		dump_massal()
 	elif Ilman in ['2']:
@@ -465,7 +465,7 @@ def result():
 	print(f'└──[1] HASIL {h}OK{x} ANDA ')
 	print(f'└──[2] HASIL {k}CP{x} ANDA ')
 	print('└──[3] KEMBALI	')
-	kz = input(f'\n├└──PILIH : ')
+	kz = input(f'\n├└──[PILIH : ')
 	if kz in ['2']:
 		try:vin = os.listdir('CP')
 		except FileNotFoundError:
@@ -567,8 +567,8 @@ def dump_massal():
 		exit()
 	try:
 		print('─────────────────────────────')
-		jum = int(input('└──MAU BERAPA TARGET [MAX 5] : '))
-		print('─────────────────────────────────────────────────────')
+		jum = int(input('└──[MAU BERAPA TARGET [MAX 5] : '))
+		print('──────────────────────────────────')
 	except ValueError:
 		print('└──MASUKKAN ANGKA JANGAN HURUF ')
 		exit()
@@ -579,8 +579,8 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input('└──MASUKAN ID YANG KE '+str(yz)+' : ')
-		print('──────────────────────────────────────────────')
+		kl = input('└──[MASUKAN ID YANG KE '+str(yz)+' : ')
+		print('──────────────────────────────')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -598,8 +598,9 @@ def dump_massal():
 			exit()
 	try:
 		print('──────────────────────────')
-		print(f'└──TOTAL ID TARGET : {h}'+str(len(id))print(f'{x}'))
-		print(f'──────────────────────────')
+		print(f'└──[TOTAL ID TARGET : {h}'+str(len(id)))
+		print(f'{x}')
+		print('──────────────────────────')
 		setting()
 	except requests.exceptions.ConnectionError:
 		print('└──JARINGAN ERROR COBA LAGI ')
@@ -614,8 +615,8 @@ def setting():
 	print(f'└──[2] {h}AKUN NEW{x} ')
 	print(f'└──[3] RANDOM {sir}[RECOMENDED]{x} ')
 	print('──────────────────────────')
-	hu = input('└──PILIH : ')
-	print('──────────────────────────')
+	hu = input('└──[PILIH : ')
+	print('────────────────────────────────')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -640,8 +641,8 @@ def setting():
 	print(f'└──[2] MBASIC FACEBOOK {k}[NOT RECOMENDED]{x} ')
 	###print('├──> 3. bbh  ')
 	###print('├──> 4. Mfreefb ')
-	print('──────────────────────────────────────────────')
-	hc = input('└──PILIH : ')
+	print('──────────────────────────────────────────')
+	hc = input('└──[PILIH : ')
 	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['2','02']:
@@ -652,7 +653,7 @@ def setting():
 		method.append('mbasic')
 	else:
 		method.append('mobile')
-	print('──────────────────────────────────────────────────────────')
+	print('───────────────────────────────────────────────────')
 	_ilman_ = input('└──INGIN MENAMPILKAN APLIKASI TERKAIT [ Y/T ] : ')
 	if _ilman_ in ['']:
 		print('└──PILIH YANG BENAR ')
@@ -677,8 +678,8 @@ def setting():
 def passwrd():
 	print('|')
 	cetak(nel('\t[green]SEDANG PROSES CRACKING MOHON BERSABAR'))
-	print(f'└──HASIL {h}OK{x} AKAN TERSIMPAN DI : {h}OK/%s {x}'%(okc))
-	print(f'└──HASIL {k}CP{x} AKAN TERSIMPAN DI : {k}CP/%s {x}'%(cpc))
+	print(f'└──[HASIL {h}OK{x} AKAN TERSIMPAN DI : {h}OK/%s {x}'%(okc))
+	print(f'└──[HASIL {k}CP{x} AKAN TERSIMPAN DI : {k}CP/%s {x}'%(cpc))
 	cetak(nel('\t[green]SETIAP 500 ID MAINKAN MODE PESAWAT [white]10 DETIK'))
 	print('|')
 	print('|')
