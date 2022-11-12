@@ -46,6 +46,10 @@ $ cd ILMAN-XD
 
 
 
+$ pip install pycryptodome
+
+
+
 $ python ilman.py
 
 
