@@ -433,20 +433,21 @@ def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	gh = 'IlmanRamdhaniR'
 	cetak(nel('\tSELAMAT DATANG [yellow]%s[white]'%(my_name)))
-	print(f'└──[{h}ID KAMU :{x}'+str(my_id))
+	print(f'└──[{h}ID KAMU :{x} '+str(my_id))
 	print(f'└──[{sir}IP KAMU : {ip}{x}')
 	print(f'└──[{k}GITHUB  : {gh}{x}')
-	print('──────────────────────────')
+	print('─────────────────────────────')
 	print(f'└──[1]{sir}CRACK PUBLIK{x} ')
 	print(f'└──[2]{h}HASIL CRACK{x}  ')
 	print(f'└──[3]{k}KELUAR{x}       ')
-	print('──────────────────────────')
+	print('─────────────────────────────')
 	Ilman = input('\r└──PILIH : ')
 	if Ilman in ['1']:
 		dump_massal()
 	elif Ilman in ['2']:
 		result()
 	elif Ilman in ['3']:
+		print('─────────────────────────────')
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
 		print('└──SUKSES LOGOUT/HAPUS COOKIES ')
@@ -565,8 +566,9 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
+		print('─────────────────────────────')
 		jum = int(input('└──MAU BERAPA TARGET [MAX 5] : '))
-		print('──────────────────────────')
+		print('─────────────────────────────────────────────────────')
 	except ValueError:
 		print('└──MASUKKAN ANGKA JANGAN HURUF ')
 		exit()
@@ -578,7 +580,7 @@ def dump_massal():
 	for met in range(jum):
 		yz+=1
 		kl = input('└──MASUKAN ID YANG KE '+str(yz)+' : ')
-		print('──────────────────────────')
+		print('──────────────────────────────────────────────')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -596,7 +598,7 @@ def dump_massal():
 			exit()
 	try:
 		print('──────────────────────────')
-		print(f'└──TOTAL ID TARGET : {h}'+str(len(id)))
+		print(f'└──TOTAL ID TARGET : {h}'+str(len(id)){x})
 		print('──────────────────────────')
 		setting()
 	except requests.exceptions.ConnectionError:
@@ -614,6 +616,7 @@ def setting():
 	print(f'└──[3] RANDOM {sir}[RECOMENDED]{x} ')
 	print('──────────────────────────')
 	hu = input('└──PILIH : ')
+	print('──────────────────────────')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -638,7 +641,7 @@ def setting():
 	print(f'└──[2] MBASIC FACEBOOK {k}[NOT RECOMENDED]{x} ')
 	###print('├──> 3. bbh  ')
 	###print('├──> 4. Mfreefb ')
-	print('──────────────────────────')
+	print('──────────────────────────────────────────────')
 	hc = input('└──PILIH : ')
 	if hc in ['1','01']:
 		method.append('mobile')
@@ -650,7 +653,7 @@ def setting():
 		method.append('mbasic')
 	else:
 		method.append('mobile')
-	print('|')
+	print('──────────────────────────────────────────────────────────')
 	_ilman_ = input('└──INGIN MENAMPILKAN APLIKASI TERKAIT [ Y/T ] : ')
 	if _ilman_ in ['']:
 		print('└──PILIH YANG BENAR ')
