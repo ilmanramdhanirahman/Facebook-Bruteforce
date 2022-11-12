@@ -598,7 +598,7 @@ def dump_massal():
 			exit()
 	try:
 		print('──────────────────────────')
-		print(f'└──TOTAL ID TARGET : {h}'+str(len(id)){x})
+		print(f'└──TOTAL ID TARGET : {h}'+str(len(id)))
 		print('──────────────────────────')
 		setting()
 	except requests.exceptions.ConnectionError:
