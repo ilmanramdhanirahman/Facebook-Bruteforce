@@ -433,9 +433,9 @@ def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	gh = 'IlmanRamdhaniR'
 	cetak(nel('\tSELAMAT DATANG [yellow]%s[white]'%(my_name)))
-	print(f'└──[{h}ID KAMU : {x}'+str(my_id))
+	print(f'└──[ID KAMU : '+str(my_id))
 	print(f'└──[IP KAMU : {sir}{ip}{x}')
-	print(f'└──[{k}GITHUB  : {gh}{x}')
+	print(f'└──[GITHUB  : {gh}')
 	print('─────────────────────────────')
 	print(f'└──[1]{sir}CRACK PUBLIK{x} ')
 	print(f'└──[2]{h}HASIL CRACK{x}  ')
