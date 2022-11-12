@@ -433,14 +433,14 @@ def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	gh = 'IlmanRamdhaniR'
 	cetak(nel('\tSELAMAT DATANG [yellow]%s[white]'%(my_name)))
-	print(f'└──[ID KAMU : '+str(my_id))
-	print(f'└──[IP KAMU : {ip}')
-	print(f'└──[GITHUB  : {gh}')
-	print('|')
-	print('└──[1] CRACK PUBLIK ')
-	print('└──[2] HASIL CRACK  ')
-	print('└──[3] KELUAR       ')
-	print('|')
+	print(f'└──{h}[ID KAMU{x}: '+str(my_id))
+	print(f'└──{sir}[IP KAMU{x} : {ip}')
+	print(f'└──{k}[GITHUB{x}  : {gh}')
+	print('──────────────────────────')
+	print(f'└──{sir}[1] CRACK PUBLIK{x} ')
+	print(f'└──{h}[2] HASIL CRACK{x}  ')
+	print(f'└──{m}[3] KELUAR{m}       ')
+	print('──────────────────────────')
 	Ilman = input('\r└──PILIH : ')
 	if Ilman in ['1']:
 		dump_massal()
@@ -566,6 +566,7 @@ def dump_massal():
 		exit()
 	try:
 		jum = int(input('└──MAU BERAPA TARGET [MAX 5] : '))
+		print('──────────────────────────')
 	except ValueError:
 		print('└──MASUKKAN ANGKA JANGAN HURUF ')
 		exit()
@@ -577,6 +578,7 @@ def dump_massal():
 	for met in range(jum):
 		yz+=1
 		kl = input('└──MASUKAN ID YANG KE '+str(yz)+' : ')
+		print('──────────────────────────')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -593,8 +595,9 @@ def dump_massal():
 			print('└──JARINGAN ERROR COBA LAGI ')
 			exit()
 	try:
-		print('|')
+		print('──────────────────────────')
 		print(f'└──TOTAL ID TARGET : {h}'+str(len(id)))
+		print('──────────────────────────')
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
@@ -606,10 +609,10 @@ def dump_massal():
 		back()
 #-------------[ PENGATURAN-ID ]---------------#
 def setting():
-	print(f'{x}└──[1] AKUN OLD ')
-	print('└──[2] AKUN NEW ')
-	print('└──[3] RANDOM ')
-	print('|')
+	print(f'└──[1] {k}AKUN OLD{x} ')
+	print(f'└──[2] {h}AKUN NEW{x} ')
+	print(f'└──[3] RANDOM {sir}[RECOMENDED]{x} ')
+	print('──────────────────────────')
 	hu = input('└──PILIH : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
@@ -635,7 +638,7 @@ def setting():
 	print(f'└──[2] MBASIC FACEBOOK {sir}[NOT RECOMENDED]{x} ')
 	###print('├──> 3. bbh  ')
 	###print('├──> 4. Mfreefb ')
-	print('|')
+	print('──────────────────────────')
 	hc = input('└──PILIH : ')
 	if hc in ['1','01']:
 		method.append('mobile')
@@ -661,6 +664,7 @@ def setting():
 		pwpluss.append('ya')
 		cetak(nel('[[cyan]•[white]] MASUKAN KATA SANDI TAMBAHAN\n[[cyan]•[white]] CONTOH :[green] SAYANG,BISMILLAH,INDONESIA[white] '))
 		pwku=input('└──MASUKAN PASSWORD TAMBAHAN : ')
+		print('──────────────────────────')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
