@@ -46,7 +46,7 @@ $ cd ILMAN-XD
 
 
 
-$ python run.py
+$ python ilman.py
 
 
 
@@ -58,7 +58,7 @@ $ git pull
 
 
 
-$ python run.py
+$ python ilman.py
 
 
 
