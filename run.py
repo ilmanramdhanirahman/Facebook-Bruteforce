@@ -566,6 +566,7 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
+		cetak(nel('PASTIKAN ID TEMAN TARGET PUBLIK'))
 		print('─────────────────────────────')
 		jum = int(input('└──[MAU BERAPA TARGET : '))
 		print('──────────────────────────────────')
