@@ -567,7 +567,7 @@ def dump_massal():
 		exit()
 	try:
 		print('─────────────────────────────')
-		cetak(nel(f'{h}PASTIKAN ID TEMAN TARGET PUBLIK{x}'))
+		cetak(nel(f'\t{h}PASTIKAN ID TEMAN TARGET PUBLIK{x}'))
 		print('─────────────────────────────')
 		jum = int(input('└──[MAU BERAPA TARGET : '))
 		print('──────────────────────────────────')
