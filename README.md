@@ -41,6 +41,8 @@ $ pip install rich
 $ git clone https://github.com/IlmanRamdhaniR/ILMAN-XD
 
 
+$ pip install pycryptodome
+
 
 $ cd ILMAN-XD
 
