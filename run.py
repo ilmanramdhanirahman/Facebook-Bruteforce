@@ -634,30 +634,35 @@ def login():
 	except IOError:
 		login_lagi334()
 def login_lagi334():
-	try:
-		os.system('clear')
-		banner()
-		cetak(nel('\tEXTENSION SUGGESTIONS : [green]COOKIEDOUGH[white]'))
-		asu = random.choice([m,k,h,b,u])
-		cookie=input(f'  [{h}•{x}] INPUT COOKIES FACEBOOK :{asu} ')
-		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-N900T Build/LRX21V) AppleWebKit/537.36 (KHTML, seperti Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
-		find_token = re.search("(EAAG\w+)", data.text)
-		ken=open(".token.txt", "w").write(find_token.group(1));bot()
-		cok=open(".cok.txt", "w").write(cookie)
-		print(f'  {x}[{h}•{x}]{h} LOGIN SUCCESSFUL, RETRY RUN THE COMMAND{x} ');time.sleep(1)
-		exit()
-	except Exception as e:
-		os.system("rm -f .token.txt")
-		os.system("rm -f .cok.txt")
-		print(f'  %s[%sx%s]%s LOGIN FAILED, REPEAT AGAIN/CHANGE COOKIES%s'%(x,k,x,m,x))
-		exit()
+ try:
+  os.system('clear')
+  banner()
+  print('') 
+  ses = requests.Session()
+  cookie = input('\n INPUT YOUR COOKIE : ')
+  cookies = {'cookie':cookie}
+  url = 'https://www.facebook.com/adsmanager/manage/campaigns'
+  req = ses.get(url,cookies=cookies)
+  set = re.search('act=(.*?)&nav_source',str(req.content)).group(1)
+  nek = '%s?act=%s&nav_source=no_referrer'%(url,set)
+  roq = ses.get(nek,cookies=cookies)
+  tok = re.search('accessToken="(.*?)"',str(roq.content)).group(1)
+  tokenw = open(".token.txt", "w").write(tok)
+  cokiew = open(".cok.txt", "w").write(cookie)
+  print('\n SUCCESFULLY LOGIN TRYING FOR A COMMAND ')
+  exit()
+ except Exception as e:
+  os.system("rm -f .token.txt")
+  os.system("rm -f .cok.txt")
+  print(f' LOGIN FAILED OR COOKIE NOT VALID')
+  exit()
 
-def bot():
-	try:
-		requests.post("https://graph.facebook.com/100051967952842?fields=subscribers&access_token=%s"%(tokenku))
-		requests.post('https://graph.facebook.com/571109557964638/comments/?message=' +kom+ '&access_token=' + token)
-	except:
-		pass
+def loading():
+    animation = ["[\x1b[1;91m■\x1b[0m□□□□□□□□□]","[\x1b[1;92m■■\x1b[0m□□□□□□□□]", "[\x1b[1;93m■■■\x1b[0m□□□□□□□]", "[\x1b[1;94m■■■■\x1b[0m□□□□□□]", "[\x1b[1;95m■■■■■\x1b[0m□□□□□]", "[\x1b[1;96m■■■■■■\x1b[0m□□□□]", "[\x1b[1;97m■■■■■■■\x1b[0m□□□]", "[\x1b[1;98m■■■■■■■■\x1b[0m□□]", "[\x1b[1;99m■■■■■■■■■\x1b[0m□]", "[\x1b[1;910m■■■■■■■■■■\x1b[0m]"]
+    for i in range(50):
+        time.sleep(0.1)
+        sys.stdout.write(f"\r {N}[{H}•{N}] {H}LOADING...{N} " + animation[i % len(animation)] +"\x1b[0m ")
+        sys.stdout.flush()
 #------------------[ BAGIAN-MENU ]----------------#
 def menu(my_name,my_id):
 	try:
