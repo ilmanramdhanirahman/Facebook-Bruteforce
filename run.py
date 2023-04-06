@@ -468,7 +468,7 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		print('')
+		
 		au='[!] MAKE SURE THE ID OF THE TARGET FRIEND IS PUBLIC [!]'
 		pengembang1=nel(au,style="cyan")
 		cetak(nel(pengembang1, title='[purple][!] ATTENTION WARNING [!]'))
