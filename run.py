@@ -199,7 +199,7 @@ def login_lagi334():
 	try:
 		os.system('clear')
 		banner()
-		cetak(nel('[bold white]Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold red"))
+		cetak(nel('[bold white]IT IS RECOMMENDED TO USE COOKIES THAT ARE STILL FRESH TO CRACK ACCOUNTS',width=90,style=f"bold red"))
 		your_cookies = input(' INPUT YOUR COOKIE FACEBOOK : ')
 		with requests.Session() as r:
 			try:
@@ -223,8 +223,8 @@ def login_lagi334():
 				'sec-fetch-dest': 'document',
 				})
 				response2 = r.get(verification_url, cookies = {'cookie': your_cookies}).text
-				if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
-					print("\x1b[1;97m[\x1b[1;91m!\x1b[1;97m]\x1b[1;91m Cookie Invalid...", end='\r');time.sleep(3.5);print("                     ", end='\r')
+				if 'HOW TO LOGIN IN FACEBOOK?' in str(response2) or '/login/?next=' in str(response2):
+					print("\x1b[1;97m[\x1b[1;91m!\x1b[1;97m]\x1b[1;91m COOKIES INVALID", end='\r');time.sleep(3.5);print("                     ", end='\r')
 				else:
 					action = re.search('action="(.*?)">', str(response2)).group(1).replace('amp;', '')
 					fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response2)).group(1)
@@ -298,12 +298,12 @@ def login_lagi334():
 							})
 							response7 = r.get(status_url, cookies = {'cookie': your_cookies}).text
 							access_token = re.search('"access_token": "(.*?)"', str(response7)).group(1)
-							print(f"\x1b[1;97m[\x1b[1;92m*\x1b[1;97m] Token :\x1b[1;92m {access_token}")
+							print(f"\x1b[1;97m[\x1b[1;92m*\x1b[1;97m] TOKEN :\x1b[1;92m {access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print("\n ╰─  Login Berhasil | python brute.py");exit()
+							print("\n SUCCESFULLY TO LOGIN | TRY COMMAND PYTHON RUN.PY");exit()
 			except Exception as e:
-				print(" ╰─  Cookies Mokad Kontol")
+				print("COOKIES EXPIRED TRY TO LOGIN")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
 				print(e)
 				time.sleep(3)
