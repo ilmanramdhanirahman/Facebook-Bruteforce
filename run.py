@@ -55,7 +55,7 @@ for xd in range(10000):
 	i='0'
 	j=random.randrange(4200,4900)
 	k=random.randrange(40,150)
-	l='Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36''
+	l='Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36'
 	uaku=f'{a} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen2.append(uaku)
 
@@ -578,7 +578,7 @@ def passwrd():
 	print(f'│[!] RESULT ACCOUNT CP : %s   │'%(cp))
 	print('╰────────────────────────────╯')
 #--------------------[ METODE-B-API ]-----------------#
-def validate1(idf,pwv):
+def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)
